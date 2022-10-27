@@ -4,7 +4,6 @@ export interface Props {
 }
 
 const { title } = Astro.props;
-import Body from "../layouts/Body.astro"
 ---
 
 <!DOCTYPE html>
@@ -16,9 +15,9 @@ import Body from "../layouts/Body.astro"
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<Body>
+	<body>
 		<slot />
-	</Body>
+	</body>
 </html>
 <style is:global>
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;500;900&display=swap");
