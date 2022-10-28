@@ -11,19 +11,17 @@ export default function Navbar(){
         }
     }
         return (
-        <>
-            <div className="flex justify-between items-center mx-2 relative lg:mx-5 pt-5 ">
-                <h3 className="text-2xl font-bold ">Invy</h3>
-                <div className="flex justify-center items-center">
-                <button className="text-3xl" onClick={handleToggleNav}>{<IoApps/>}</button>
+            <div className="flex justify-between items-center mx-auto relative px-2 py-2">
+                <a className="text-2xl font-bold hover:animate-bounce" href="/">Invy donuts</a>
+                <div className="flex justify-center items-center ">
+                <button className="text-3xl lg:text-4xl" onClick={handleToggleNav}>{<IoApps/>}</button>
                 </div>
-            </div>
                 {nav && (
-                <div className="flex flex-col justify-center items-center p-2 absolute right-10 top-15 rounded-md bg-zinc-800 w-24">
-                    <a>Home</a>
-                    <a>About</a>
+                <div className="z-50 flex flex-col justify-between items-center p-2 absolute right-10 top-10 rounded-md bg-zinc-800 w-24">
+                    <a className="py-2" href="/">Home</a>
+                    <a className="py-2" href="/about">About</a>
                 </div>
                 )}
-        </>
+            </div>
         )
 }
