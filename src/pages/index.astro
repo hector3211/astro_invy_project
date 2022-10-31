@@ -1,15 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Body from "../layouts/Body.astro"
-import NavBar from "../components/Nav"
+import NavBar from "../components/Nav.astro"
 import Header from "../components/Header.astro"
-import Menu from "../components/Menu.astro"
+import Middle from "../components/Middle.astro"
 ---
 
 <Layout title="Welcome to Invy.">
 	<Body>
-        <NavBar client:load/>
+        <NavBar/>
         <Header/>
-        <Menu/>
+        <Middle/>
 	</Body>
 </Layout>

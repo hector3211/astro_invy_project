@@ -1,0 +1,23 @@
+---
+import {GiDonut} from "react-icons/gi"
+import ThemeButton from "../components/ThemeButton"
+---
+
+
+    <div class="z-50 fixed top-0 backdrop-blur-md w-full flex justify-between items-center py-1 px-2">
+        <div class="flex items-center text-3xl lg:text-4xl">
+            <a class="font-semi lg:font-bold" href="/">Invy</a>
+            <span class="ml-1"><GiDonut/></span>
+            <p>'s</p>
+        </div>
+        <div class="flex justify-center items-center relative">
+            <ThemeButton  client:only="react"/>
+            <div class="flex shrink">
+                <a class="text-md lg:text-2xl" href="/">Home</a>
+                <span>/</span>
+                <a class="text-md lg:text-2xl" href="/about">About</a>
+                <span>/</span>
+                <a class="text-md lg:text-2xl" href="/developer">Developer</a>
+            </div>
+        </div>
+    </div>
